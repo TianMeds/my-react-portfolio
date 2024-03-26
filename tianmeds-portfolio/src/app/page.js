@@ -1,4 +1,6 @@
 import Container from "./components/Container";
+import Link from 'next/link'
+import '../app/globals.css'
 
 export default function Home() {
   return (
@@ -8,13 +10,13 @@ export default function Home() {
 
         {/* First Column */}
         <div className="flex-1 sm:w-full md:w-1/2 lg:w-1/3 mt-4 sm:mt-4 md:mt-2">
-  <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold ml-5">Hello I'm</h3>
-  <h1 className="text-5xl sm:text-8xl m-4 font-bold">Christian Medallada</h1> 
-  <div className="ml-4 text-base sm:text-xl">
-    <p>Full Stack Developer and UI/UX Designer Based on Philippines. </p>
-    <p>I specialized in Backend Development, Responsive Web Design,</p>
-    <p>and Cloud Deployment</p>
-  </div>
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold ml-5">Hello I'm</h3>
+          <h1 className="text-5xl sm:text-8xl m-4 font-bold">Christian Medallada</h1> 
+          <div className="ml-4 text-base sm:text-xl">
+            <p>Full Stack Developer and UI/UX Designer Based on Philippines. </p>
+            <p>I specialized in Backend Development, Responsive Web Design,</p>
+            <p>and Cloud Deployment</p>
+          </div>
 
           <div className="flex-1 flex gap-3 m-4 flex-wrap sm:flex-nowrap">
             <div className="sm:w-auto w-full">
@@ -48,17 +50,103 @@ export default function Home() {
       
 
       <div className="flex-1 flex flex-wrap justify-between gap-2 mt-10">
-        <div className="w-full sm:w-1/2 md:w-1/5 ">3+ Years Experience</div>
-        <div className="w-full sm:w-1/2 md:w-1/5 ">12 Completed Projects</div>
-        <div className="w-full sm:w-1/2 md:w-1/5 ">1 Full Stack Project</div>
+      <div className="flex items-center w-full sm:w-1/2 md:w-1/5">
+        <div className="text-4xl md:text-6xl font-bold mr-2">3+</div>
+        <div className="ml-2 sm:ml-0 mt-2 sm:mt-0 text-2xl">Years Experience</div>
       </div>
+      <div className="flex items-center w-full sm:w-1/2 md:w-1/5">
+        <div className="text-4xl md:text-6xl font-bold mr-2">12</div>
+        <div className="ml-2 sm:ml-0 mt-2 sm:mt-0 text-2xl">Completed Projects</div>
+      </div>
+      <div className="flex items-center w-full sm:w-1/2 md:w-1/5">
+        <div className="text-4xl md:text-6xl font-bold mr-2">2+</div>
+        <div className="ml-2 sm:ml-0 mt-2 sm:mt-0 text-2xl">Full Stack Project</div>
+      </div>
+    </div>
+
+
+
     </Container>
 
     <Container className="flex flex-col gap-3">
-      <div>
-
+      <div className="flex-1 sm:w-full md:w-1/2 lg:w-1/3 mt-4 sm:mt-4 md:mt-10 text-center">
+        <h1 className="text-5xl sm:text-7xl m-4 font-bold">Projects</h1> 
       </div>
+
+      <div>
+      <div className="flex justify-center"> {/* Center the image cards */}
+        <div className="flex flex-col gap-4 sm:flex-row sm:gap-8 mt-4 md:mt-4 lg:mt-20 mx-auto h-3/4">
+          {/* Image Card 1 */}
+          <div className={"rounded overflow-hidden shadow-lg bg-white dark:bg-gray-800 w-full box shadow-[5px_5px_0px_5px_rgba(28,21,20)] dark:shadow-[5px_5px_0px_5px_rgba(255,255,255)] "}>
+            <img className="w-full shadow-md mr-4 rounded" src="https://raw.githubusercontent.com/TianMeds/image--stocks-for-coding/main/WebsiteMockup%20(2).jpg" alt="Image 1" />
+            <div className="px-6 py-4">
+              <div className="font-Semibold text-base mb-2">Website</div>
+              <div>
+              <Link href="" className="un font-bold text-2xl mb-2  ">React Portfolio Website</Link>
+              </div>
+              <Link href="/project1" className="underline underline-offset-4 text-sm">Visit Project</Link>
+            </div>
+          </div>
+
+
+
+          {/* Image Card 2 */}
+          <div className={"rounded overflow-hidden shadow-lg bg-white dark:bg-gray-800 w-full box shadow-[5px_5px_0px_5px_rgba(28,21,20)] dark:shadow-[5px_5px_0px_5px_rgba(255,255,255)] "}>
+            <img className="w-full shadow-md mr-4 rounded" src="https://raw.githubusercontent.com/TianMeds/image--stocks-for-coding/main/HomeCity%20Mockup.png" alt="Image 1" />
+            <div className="px-6 py-4">
+              <div className="font-Semibold text-base mb-2">Website</div>
+              <div>
+              <Link href="" className="un font-bold text-2xl mb-2  ">Real Estate Website</Link>
+              </div>
+              <Link href="/project1" className="underline underline-offset-4 text-sm">Visit Project</Link>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div className="flex justify-center"> {/* Center the image cards */}
+        <div className="flex flex-col gap-4 sm:flex-row sm:gap-8 mt-4 md:mt-4 lg:mt-20 mx-auto">
+          {/* Image Card 3 */}
+          <div className={"rounded overflow-hidden shadow-lg bg-white dark:bg-gray-800 w-full box shadow-[5px_5px_0px_5px_rgba(28,21,20)] dark:shadow-[5px_5px_0px_5px_rgba(255,255,255)] "}>
+            <img className="w-full shadow-md mr-4 rounded" src="https://raw.githubusercontent.com/TianMeds/image--stocks-for-coding/main/Mockup-Research.jpg" alt="Image 1" />
+            <div className="px-6 py-4">
+              <div className="font-Semibold text-base mb-2">Website</div>
+              <div>
+              <Link href="" className="un font-bold text-2xl mb-2  ">Research Title Generator Website</Link>
+              </div>
+              <Link href="/project1" className="underline underline-offset-4 text-sm">Visit Project</Link>
+            </div>
+          </div>
+
+
+
+          {/* Image Card 4 */}
+          <div className={"rounded overflow-hidden shadow-lg bg-white dark:bg-gray-800 w-full box shadow-[5px_5px_0px_5px_rgba(28,21,20)] dark:shadow-[5px_5px_0px_5px_rgba(255,255,255)] "}>
+            <img className="w-full shadow-md mr-4 rounded" src="https://raw.githubusercontent.com/TianMeds/image--stocks-for-coding/main/WeatherMockup.jpg" alt="Image 1" />
+            <div className="px-6 py-4">
+              <div className="font-Semibold text-base mb-2">Website</div>
+              <div>
+              <Link href="" className="un font-bold text-2xl mb-2  ">API Weather Website</Link>
+              </div>
+              <Link href="/project1" className="underline underline-offset-4 text-sm">Visit Project</Link>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div className="flex justify-end mt-4">
+        <Link href="/project" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          View All
+        </Link>
+      </div>
+  </div>
+
+
     </Container>
+
+
+
   </main>
   
   );
