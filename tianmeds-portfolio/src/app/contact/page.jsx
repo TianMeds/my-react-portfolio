@@ -1,11 +1,16 @@
 import Container from "../components/Container"
+import Contact from "../components/Contact"
+import Footer from "../components/Footer"
 
 const ContactPage = () => {
   return (
     <main>
-      <Container>
-        <h1>Contact</h1>
+
+      <Container className="flex flex-col gap-3">
+        <Contact />
       </Container>
+
+      <Footer />
     </main>
   )
 }

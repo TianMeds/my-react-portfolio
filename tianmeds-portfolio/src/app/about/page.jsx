@@ -4,7 +4,6 @@ import TechStack from "../components/TechStack"
 import Experience from "../components/Experience"
 import Leftside from "../components/Leftside"
 import Certificate from "../components/Certificate"
-import Blog from "../components/Blog"
 import Footer from "../components/Footer"
 
 

@@ -1,7 +1,38 @@
 import Container from "./components/Container";
 import Footer from "./components/Footer";
 import Link from 'next/link'
+import Image from 'next/image'
 import '../app/globals.css'
+import project1 from '../../public/ReactPortfolio.jpg'
+
+
+const NotFeaturedProject = ({title, type, img, link, github}) => {
+
+  return (
+      <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-black bg-white dark:bg-black dark:border-white p-6 relative'>
+          <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] bg-black dark:bg-white rounded-[2rem] rounded-br-3xl'/>
+              <Link href={link} target='_blank' className='w-full cursor-pointer overflow-hidden rounded-lg'>
+                  <Image src={img} alt={title} className='w-full h-auto' />
+              </Link>
+
+              <div className='w-full flex flex-col items-start justify-between mt-4'>
+                  <span className='text-sky-600 font-medium text-xl'>{type}</span>
+                  <Link href={link} target='_blank' className='hover:underline underline-offset-2'>
+                      <h3 className='my-2 w-full text-left text-4xl font-bold'>{title}</h3>
+                  </Link>
+
+                  <div className='w-full mt-2 flex items-center justify-between'>
+                      <Link href={link} target='_blank' className='ml-4 text-lg font-semibold underline'>
+                          Visit
+                      </Link>
+                      <Link href={github} target='_blank' className='w-8'>
+                          <img src="https://raw.githubusercontent.com/TianMeds/image--stocks-for-coding/4e3c205524bf6188a19f4264705906fac42756da/github-mark.svg" alt="GitHub" class="w-8 h-8 dark:filter dark:invert transform transition-transform hover:-translate-y-1"/>
+                      </Link>
+                  </div>
+              </div>
+      </article>
+  )
+}
 
 export default function Home() {
   return (
@@ -95,96 +126,44 @@ export default function Home() {
         {/* First Set of Image Cards */}
         <div className="flex flex-col gap-4 sm:flex-row sm:gap-8 mx-auto">
             {/* Image Card 1 */}
-            <div className="rounded-lg overflow-hidden bg-white dark:bg-gray-800 w-full sm:w-6/12 border-2 border-black dark:border-white sm:box shadow-[5px_5px_0px_2px_rgba(0,0,0)] sm:dark:shadow-[5px_5px_0px_2px_rgba(255,255,255)]">
-              
-              <div className="flex justify-center items-center relative overflow-hidden w-11/12 object-center m-5 transform transition-transform duration-300 hover:scale-105">
-                <img className="w-11/12 object-center shadow-md rounded-lg m-5" src="https://raw.githubusercontent.com/TianMeds/image--stocks-for-coding/main/WebsiteMockup%20(2).jpg" alt="Image 1" />
-              </div>
-
-
-                <div className="px-6 py-1 mb-6">
-                  <div className="font-Semibold text-base mb-2 text-blue-400">Website</div>
-                  <div>
-                    <Link href="" className="un font-bold text-2xl mb-2 dark: dark">React Portfolio Website</Link>
-                  </div>
-
-                  <div className="flex justify-between">
-                    <Link href="/project1" className="underline underline-offset-4 text-sm">Visit Project</Link>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                      <img src="https://raw.githubusercontent.com/TianMeds/image--stocks-for-coding/4e3c205524bf6188a19f4264705906fac42756da/github-mark.svg" alt="GitHub" class="w-8 h-8 dark:filter dark:invert transform transition-transform hover:-translate-y-1"/>
-                    </a>
-                  </div>
-                </div> 
-            </div>
+            <NotFeaturedProject
+                type='Featured Project'
+                title='Project 1'
+                img={project1}
+                link='https://www.google.com'
+                github='https://www.google.com'
+            />
         
             {/* Image Card 2 */}
-            <div className="rounded-lg overflow-hidden bg-white dark:bg-gray-800 w-full sm:w-6/12 border-2 border-black dark:border-white sm:box shadow-[5px_5px_0px_2px_rgba(0,0,0)] sm:dark:shadow-[5px_5px_0px_2px_rgba(255,255,255)]">
-              <div className="flex justify-center items-center relative overflow-hidden w-11/12 object-center m-5 transform transition-transform duration-300 hover:scale-105">
-                <img className="w-11/12 object-center shadow-md rounded-lg m-5" src="https://raw.githubusercontent.com/TianMeds/image--stocks-for-coding/main/HomeCity%20Mockup.png" alt="Image 2" />
-              </div>
-              <div className="px-6 py-1 mb-6">
-                <div className="font-Semibold text-base mb-2 text-blue-400">Website</div>
-                <div>
-                  <Link href="" className="un font-bold text-2xl mb-2">Real Estate Website</Link>
-                </div>
-
-
-
-                <div className="flex justify-between">
-                    <Link href="/project1" className="underline underline-offset-4 text-sm">Visit Project</Link>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                      <img src="https://raw.githubusercontent.com/TianMeds/image--stocks-for-coding/4e3c205524bf6188a19f4264705906fac42756da/github-mark.svg" alt="GitHub" class="w-8 h-8 dark:filter dark:invert transform transition-transform hover:-translate-y-1"/>
-                    </a>
-                  </div>
-              </div>
-            </div>
+            <NotFeaturedProject
+                type='Featured Project'
+                title='Project 1'
+                img={project1}
+                link='https://www.google.com'
+                github='https://www.google.com'
+            />
           </div>
 
           {/* Second Set of Image Cards */}
           <div className="flex flex-col gap-4 sm:flex-row sm:gap-8 mx-auto mt-8">
             {/* Image Card 3 */}
-            <div className="rounded-lg overflow-hidden bg-white dark:bg-gray-800 w-full sm:w-6/12 border-2 border-black dark:border-white sm:box shadow-[5px_5px_0px_2px_rgba(0,0,0)] sm:dark:shadow-[5px_5px_0px_2px_rgba(255,255,255)]">
-              <div className="flex justify-center items-center relative overflow-hidden w-11/12 object-center m-5 transform transition-transform duration-300 hover:scale-105">
-                <img className="w-11/12 object-center shadow-md rounded-lg m-5" src="https://raw.githubusercontent.com/TianMeds/image--stocks-for-coding/main/Mockup-Research.jpg" alt="Image 3" />
-              </div>
-              <div className="px-6 py-1 mb-6">
-                <div className="font-Semibold text-base mb-2 text-blue-400">Website</div>
-                <div>
-                  <Link href="" className="un font-bold text-2xl mb-2">Research Title Generator Website</Link>
-                </div>
-
-
-                <div className="flex justify-between">
-                    <Link href="/project1" className="underline underline-offset-4 text-sm">Visit Project</Link>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                      <img src="https://raw.githubusercontent.com/TianMeds/image--stocks-for-coding/4e3c205524bf6188a19f4264705906fac42756da/github-mark.svg" alt="GitHub" class="w-8 h-8 dark:filter dark:invert transform transition-transform hover:-translate-y-1"/>
-                    </a>
-                  </div>
-
-              </div>
-            </div>
+            <NotFeaturedProject
+                type='Featured Project'
+                title='Project 1'
+                img={project1}
+                link='https://www.google.com'
+                github='https://www.google.com'
+            />
 
 
             {/* Image Card 4 */}
-            <div className="rounded-lg overflow-hidden bg-white dark:bg-gray-800 w-full sm:w-6/12 border-2 border-black dark:border-white sm:box shadow-[5px_5px_0px_2px_rgba(0,0,0)] sm:dark:shadow-[5px_5px_0px_2px_rgba(255,255,255)]">
-              <div className="flex justify-center items-center relative overflow-hidden w-11/12 object-center m-5 transform transition-transform duration-300 hover:scale-105">
-                <img className="w-11/12 object-center shadow-md rounded-lg m-5" src="https://raw.githubusercontent.com/TianMeds/image--stocks-for-coding/main/WeatherMockup.jpg" alt="Image 4" />
-              </div>  
-              <div className="px-6 py-1 mb-6">
-                <div className="font-Semibold text-base mb-2 text-blue-400">Website</div>
-                <div>
-                  <Link href="" className="un font-bold text-2xl mb-2">API Weather Website</Link>
-                </div>
-
-                <div className="flex justify-between">
-                    <Link href="/project1" className="underline underline-offset-4 text-sm">Visit Project</Link>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                      <img src="https://raw.githubusercontent.com/TianMeds/image--stocks-for-coding/4e3c205524bf6188a19f4264705906fac42756da/github-mark.svg" alt="GitHub" class="w-8 h-8 dark:filter dark:invert transform transition-transform hover:-translate-y-1"/>
-                    </a>
-                  </div>
-                  
-              </div>
-            </div>     
+            <NotFeaturedProject
+                type='Featured Project'
+                title='Project 1'
+                img={project1}
+                link='https://www.google.com'
+                github='https://www.google.com'
+            />  
         </div>  
       </div>
 
