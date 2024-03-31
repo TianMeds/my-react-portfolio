@@ -17,12 +17,12 @@ const Contact = () => {
             <div>
                 <h2 className='text-2xl font-bold'>General</h2>
                 <p className='text-lg mx-5 my-5'>Email: medalladachris100@gmail.com</p>
-                <p className='text-lg mx-5 my-5'>Contact: +1234567890</p>
+                <p className='text-lg mx-5 my-5'>Contact: +63 945 2395 356</p>
                 <p className='text-lg mx-5 my-5'>Available Time: Mon-Fri, 9:00 AM - 5:00 PM</p>
             </div>
             <div>
                 <h2 className='text-2xl font-bold'>Address</h2>
-                <p className='text-lg mx-5 my-5'>123 Main Street, Cityville, State, Country</p>
+                <p className='text-lg mx-5 my-5'>515 Hizon St. Bangkal Makati City, PH</p>
             </div>
         </div>
     </div>

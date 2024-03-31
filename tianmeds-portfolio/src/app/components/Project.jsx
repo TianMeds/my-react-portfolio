@@ -1,17 +1,37 @@
-import React from 'react'
+'use client'
 import Link from 'next/link'
 import Image from 'next/image'
-import project1 from '../../../public/ReactPortfolio.jpg'
+import project1 from '../../../public/Portfolio-Mockup.png'
+import project2 from '../../../public/Recipe-Mockup.png';
+import project3 from '../../../public/Discord-Mockup.png';
+import project4 from '../../../public/Weather-Mockup.png';
+import project5 from '../../../public/Homecity-Mockup.png';
+import project6 from '../../../public/QR-Mockup.png';
+import project7 from '../../../public/Research-Mockup.png';
+import project8 from '../../../public/Todo-Mockup.png';
+import project9 from '../../../public/Scholarlink-Mockup.png';
+import {motion } from "framer-motion"
+import { useRef } from "react"
 
 const FeaturedProject = ({type, title, summary, img, link, github}) => {
     
+    const ref  = useRef(null)
     return (
-        <article className='w-full flex flex-col lg:flex-row items-center justify-between relative rounded-br-2xl rounded-3xl border border-solid border-black dark:border-white bg-white dark:bg-black shadow-2xl p-6 lg:p-12 '>
+
+        <div ref={ref}>
+            <motion.div
+                initial={{y:50}}
+                whileInView={{y:0}}
+                transition={{duration: 0.5, type:"spring"}}
+            >
+        <article
+
+        className='w-full flex flex-col lg:flex-row items-center justify-between relative rounded-br-2xl rounded-3xl border border-solid border-black dark:border-white bg-white dark:bg-black shadow-2xl p-6 lg:p-12 mb-10 '>
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] bg-black dark:bg-white rounded-[2.5rem] rounded-br-3xl hidden md:block' />
 
 
             <Link href={link} target='_blank' className='w-full lg:w-1/2 cursor-pointer overflow-hidden rounded-lg mb-4 lg:mb-0 lg:mr-6'>
-                <Image src={img} alt={title} className='w-full h-auto rounded-lg' />
+                <Image src={img} alt={title} className='w-full h-auto rounded-lg border-black dark:border-white border-2  transition-transform transform-gpu hover:scale-105 duration-300 ease-in-out'  />
             </Link>
 
             <div className='w-full lg:w-1/2 flex flex-col items-start justify-between'>
@@ -25,24 +45,36 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
                     <Link href={github} target='_blank' className='w-10'>
                         <img src="https://raw.githubusercontent.com/TianMeds/image--stocks-for-coding/4e3c205524bf6188a19f4264705906fac42756da/github-mark.svg" alt="GitHub" className="w-8 h-8 dark:filter dark:invert transform transition-transform hover:-translate-y-1" />
                     </Link>
-                    <Link href={link} target='_blank' className='ml-4 rounded-lg bg-black text-white p-2 px-6 text-lg font-semibold dark:bg-white dark:text-black'>
-                        Visit Project
-                    </Link>
+                    <Link href={link} target='_blank' className='ml-4 rounded-lg bg-black text-white p-2 px-6 text-lg font-semibold dark:bg-white dark:text-black transition-colors duration-300 hover:scale-105'>
+                Visit Project
+            </Link>
                 </div>
             </div>
         </article>
+
+        </motion.div>
+        </div>
     );
 
 }
 
 const NotFeaturedProject = ({title, type, img, link, github}) => {
 
+    const ref = useRef(null)
+
     return (
-        <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-black bg-white dark:bg-black dark:border-white p-6 relative xs:p-4'>
-<div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] bg-black dark:bg-white rounded-[2.5rem] rounded-br-3xl hidden md:block' />
+        <div ref={ref}>
+            <motion.div
+                initial={{y:50}}
+                whileInView={{y:0}}
+                transition={{duration: 0.5, type:"spring"}}
+            >
+        <article 
+        className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-black bg-white dark:bg-black dark:border-white p-6 relative xs:p-4 mb-10 '>
+            <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] bg-black dark:bg-white rounded-[2.5rem] rounded-br-3xl hidden md:block' />
 
                 <Link href={link} target='_blank' className='w-full cursor-pointer overflow-hidden rounded-lg'>
-                    <Image src={img} alt={title} className='w-full h-auto' />
+                    <Image src={img} alt={title} className='w-full h-auto border-black dark:border-white border-2 rounded-lg transition-transform transform-gpu hover:scale-105 duration-300 ease-in-out' />
                 </Link>
 
                 <div className='w-full flex flex-col items-start justify-between mt-4'>
@@ -61,60 +93,116 @@ const NotFeaturedProject = ({title, type, img, link, github}) => {
                     </div>
                 </div>
         </article>
+        </motion.div>
+        </div>
     )
 }
 
 const Project = () => {
+
+    const ref = useRef(null)
   return (    
     
-        <div className="w-auto mb-16 flex flex-col items-center justify-center dark:text-light">
-            <h1 className="text-5xl font-black sm:text-8xl m-4">Projects</h1> 
+        <div  ref={ref} className="w-auto mb-16 flex flex-col items-center justify-center dark:text-light">
+            <motion.h1
+                            initial={{y:50}}
+                            whileInView={{y:0}}
+                            transition={{duration: 0.5, type:"spring"}}
+            className="text-5xl font-black sm:text-8xl m-4 mb-10">Projects</motion.h1> 
 
             <div className='flex flex-col gap-8 xl:gap-x-16 lg:gap-x-8 md:gap-y-8 sm:gap-y-8'>
-    <div className='col-span-12'>
-        <FeaturedProject
-            type='Featured Project'
-            title='Project 1'
-            summary='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.'
-            img={project1}
-            link='https://www.google.com'
-            github='https://www.google.com'
-        />
-    </div>
-    <div className='flex flex-col md:flex-row gap-8'>
-        <div className='flex-1'>
-            <NotFeaturedProject
-                type='Featured Project'
-                title='Project 1'
-                img={project1}
-                link='https://www.google.com'
-                github='https://www.google.com'
-            />
-        </div>
-        <div className='flex-1'>
-            <NotFeaturedProject
-                type='Featured Project'
-                title='Project 1'
-                img={project1}
-                link='https://www.google.com'
-                github='https://www.google.com'
-            />
-        </div>
-    </div>
-    <div className='col-span-12'>
-        <FeaturedProject
-            type='Featured Project'
-            title='Project 1'
-            summary='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.'
-            img={project1}
-            link='https://www.google.com'
-            github='https://www.google.com'
-        />
-    </div>
-</div>
+                <div className='col-span-12'>
+                    <FeaturedProject
+                        type='Featured Website'
+                        title='Scholarship Management System'
+                        summary="Scholarlink is a proposed system developed by the See Solutions Team aimed at supporting the Gado and Jess Jalandoni Scholarship Project (GJJSP) Team, under the Assisi Development Foundation, Inc. The system is designed to address the challenges of managing scholar information and streamlining submission processes, thereby enhancing the GJJSP's capacity to make significant human capital investments by offering deserving Filipino students the opportunity to pursue college education."
+                        img={project9}
+                        link='https://gadojessjalandoni-client.pages.dev/login'
+                        github='https://gadojessjalandoni-client.pages.dev/login'
+                    />
+                </div>
+                <div className='flex flex-col md:flex-row gap-8'>
+                    <div className='flex-1'>
+                        <NotFeaturedProject
+                            type='Website'
+                            title='Global Weather App'
+                            img={project4}
+                            link='https://tianmeds.github.io/weather-web-api/'
+                            github='https://github.com/TianMeds/weather-web-api.git'
+                        />
+                    </div>
+                    <div className='flex-1'>
+                        <NotFeaturedProject
+                            type='Website'
+                            title='Research Title Website'
+                            img={project7}
+                            link='https://tianmeds.github.io/ResearchTitleGenerator/'
+                            github='https://github.com/TianMeds/ResearchTitleGenerator.git'
+                        />
+                    </div>
+                </div>
+                <div className='col-span-12'>
+                    <FeaturedProject
+                        type='Featured Website'
+                        title='Full Stack Portfolio'
+                        summary='This portfolio was created with React with the mix of PHP and MySQL for the Database. This was created to showcase my expertise in animation using CSS and JavaScript File. It consist of Home, About, Project, and Contact Page'
+                        img={project1}
+                        link='https://www.google.com'
+                        github='https://www.google.com'
+                    />
+                </div>
+                <div className='flex flex-col md:flex-row gap-8'>
+                    <div className='flex-1'>
+                        <NotFeaturedProject
+                            type='Website'
+                            title='Discord Bot and Website'
+                            img={project3}
+                            link='https://tianmeds.github.io/weather-web-api/'
+                            github='https://github.com/TianMeds/weather-web-api.git'
+                        />
+                    </div>
+                    <div className='flex-1'>
+                        <NotFeaturedProject
+                            type='Website'
+                            title='Todo List Website'
+                            img={project8}
+                            link='https://tianmeds.github.io/todo-list/'
+                            github='https://github.com/TianMeds/todo-list.git'
+                        />
+                    </div>
+                </div>
+                <div className='col-span-12'>
+                    <FeaturedProject
+                        type='Featured Website'
+                        title='Food Recipe Website'
+                        summary='Express Eat is a website that provides a wide variety of recipes. Recipes that we offer not only here in the philippines but for different countries. We also have a search bar that allows you to search for a specific recipe. We hope that you will enjoy this website and find the recipe that you are craving for.'
+                        img={project2}
+                        link='https://tianmeds.github.io/ExpressEat/'
+                        github='https://github.com/TianMeds/ExpressEat.git'
+                    />
+                </div>
+                <div className='flex flex-col md:flex-row gap-8'>
+                    <div className='flex-1'>
+                        <NotFeaturedProject
+                            type='Website'
+                            title='Real Estate Website'
+                            img={project5}
+                            link='https://homecity.pages.dev'
+                            github='https://homecity.pages.dev'
+                        />
+                    </div>
+                    <div className='flex-1'>
+                        <NotFeaturedProject
+                            type='Website'
+                            title='QR Code Generator Website'
+                            img={project6}
+                            link='https://tianmeds.github.io/QR-Code-Generator/'
+                            github='https://github.com/TianMeds/QR-Code-Generator.git'
+                        />
+                    </div>
+                </div>
 
-
-
+            </div>
         </div>
 
         

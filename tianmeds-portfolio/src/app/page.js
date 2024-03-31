@@ -3,13 +3,16 @@ import Footer from "./components/Footer";
 import Link from 'next/link'
 import Image from 'next/image'
 import '../app/globals.css'
-import project1 from '../../public/ReactPortfolio.jpg'
+import project1 from '../../public/Portfolio-Mockup.png';
+import project2 from '../../public/Recipe-Mockup.png';
+import project3 from '../../public/Discord-Mockup.png';
+import project4 from '../../public/Weather-Mockup.png';
 
 
 const NotFeaturedProject = ({title, type, img, link, github}) => {
 
   return (
-      <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-black bg-white dark:bg-black dark:border-white p-6 relative'>
+      <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-black bg-white dark:bg-black dark:border-white p-6 relative my-8'>
           <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] bg-black dark:bg-white rounded-[2rem] rounded-br-3xl'/>
               <Link href={link} target='_blank' className='w-full cursor-pointer overflow-hidden rounded-lg'>
                   <Image src={img} alt={title} className='w-full h-auto' />
@@ -109,7 +112,7 @@ export default function Home() {
         </div>
 
         <div class="flex justify-end sm:mb-10 md:mb-0">
-          <Link href="/project" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg flex items-center">
+          <Link href="/project" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg flex items-center my-5">
             <span class="text-xl">View All</span>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ml-2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
@@ -124,23 +127,23 @@ export default function Home() {
 
       <div className="flex flex-col justify-center items-center">
         {/* First Set of Image Cards */}
-        <div className="flex flex-col gap-4 sm:flex-row sm:gap-8 mx-auto">
+        <div className="flex flex-col gap-4 sm:flex-row sm:gap-8">
             {/* Image Card 1 */}
             <NotFeaturedProject
-                type='Featured Project'
-                title='Project 1'
+                type='Website'
+                title='React Portfolio Website'
                 img={project1}
-                link='https://www.google.com'
-                github='https://www.google.com'
+                link='https://react-portfolio-dro.pages.dev'
+                github='https://github.com/TianMeds/my-Official-Portfolio.git'
             />
         
             {/* Image Card 2 */}
             <NotFeaturedProject
-                type='Featured Project'
-                title='Project 1'
-                img={project1}
-                link='https://www.google.com'
-                github='https://www.google.com'
+                type='Website'
+                title='Food Recipe Website'
+                img={project2}
+                link='https://tianmeds.github.io/ExpressEat/'
+                github='https://github.com/TianMeds/ExpressEat.git'
             />
           </div>
 
@@ -148,21 +151,21 @@ export default function Home() {
           <div className="flex flex-col gap-4 sm:flex-row sm:gap-8 mx-auto mt-8">
             {/* Image Card 3 */}
             <NotFeaturedProject
-                type='Featured Project'
-                title='Project 1'
-                img={project1}
-                link='https://www.google.com'
-                github='https://www.google.com'
+                type='Bot Application'
+                title='Tone Bot'
+                img={project3}
+                link='https://tianmeds.github.io/DiscordWebsite/'
+                github='https://github.com/TianMeds/DiscordBot.git'
             />
 
 
             {/* Image Card 4 */}
             <NotFeaturedProject
-                type='Featured Project'
-                title='Project 1'
-                img={project1}
-                link='https://www.google.com'
-                github='https://www.google.com'
+                type='Website'
+                title='Weather Application'
+                img={project4 }
+                link='https://tianmeds.github.io/weather-web-api/'
+                github='https://github.com/TianMeds/weather-web-api.git'
             />  
         </div>  
       </div>
