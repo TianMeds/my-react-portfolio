@@ -34,13 +34,14 @@ const AboutPage = () => {
 
           <div class="flex flex-col sm:w-full md:w-1/2 lg:w-2/3 mt-4 sm:mt-4 md:mt-10 mb-10 ">
             
-            <div className="w-full">
-                <p>Hi, My Name Is Christian B. Medallada. Most People Call Me Tian Or Meds. I'm Currently 21 Years Old And Living In Makati City, Philippines. 
-                  I'm currently pursuing a Bachelor of Science in Information Technology. I work on a variety of projects such as websites, web apps, UI/UX design, web and graphic design, 
+          <div className="w-full">
+              <p>Hi, My Name Is Christian B. Medallada. Most People Call Me Tian Or Meds. I&apos;m Currently 21 Years Old And Living In Makati City, Philippines. 
+                  I&apos;m currently pursuing a Bachelor of Science in Information Technology. I work on a variety of projects such as websites, web apps, UI/UX design, web and graphic design, 
                   video creation, and coding lessons. have been working on so many projects that would eventually make me a better software developer.
-                  <br/> <br/> When I'm not writing code, 
-                  I enjoy editing and learning about emerging technologies, travelling and learning managing money. I share the things I've learned through short videos or on my blog.</p>
-            </div>
+                  <br/> <br/> When I&apos;m not writing code, 
+                  I enjoy editing and learning about emerging technologies, travelling and learning managing money. I share the things I&apos;ve learned through short videos or on my blog.</p>
+          </div>
+
 
             <TechStack />
             <Experience />

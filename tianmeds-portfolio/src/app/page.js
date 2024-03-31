@@ -45,7 +45,7 @@ export default function Home() {
 
         {/* First Column */}
         <div className="flex-1 sm:w-full md:w-1/2 lg:w-1/3 mt-4 sm:mt-4 md:mt-2">
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold ml-5">Hello I'm</h3>
+        <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold ml-5">Hello I&apos;m</h3>
           <h1 className="text-5xl sm:text-8xl m-4 font-bold">Christian Medallada</h1> 
           <div className="ml-4 text-base sm:text-xl">
             <p>Full Stack Developer and UI/UX Designer Based on Philippines. </p>

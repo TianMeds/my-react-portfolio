@@ -47,8 +47,8 @@ export default function TechStack() {
     <div className="w-full mt-4">
         <h1 className="font-semibold text-lg mb-4">Technology Stacks</h1>
         <div class="flex flex-wrap">
-        {imageLinks.map((link) => (
-            <div ref={ref} class="w-auto  py-1">
+        {imageLinks.map((link, index) => ( // Add key prop
+            <div key={index} ref={ref} className="w-auto py-1">
             <motion.div 
              initial={{y:50}}
              whileInView={{y:0}}

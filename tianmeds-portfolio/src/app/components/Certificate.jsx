@@ -52,29 +52,31 @@ const Certificate = () => {
   return (
     <div className="w-full mt-4">
     <h1 className="font-semibold text-lg mb-4">Certificate</h1>
-        <div className='flex flex-wrap'>
-            {certificates.map((certificate) => (
-                
-                <div ref={ref} className='w-auto py-1'>
-                    <motion.div 
-                        initial={{y:50}}
-                        whileInView={{y:0}}
-                        transition={{duration: 0.5, type:"spring"}}
-                        className='w-60 h-28 border-2 border-white rounded-md bg-black dark:bg-white m-1 p-3 space-y-1.5'>
-                            <div className='text-white dark:text-black text-sm font-bold'>{certificate.name}</div>
-                            <div className='text-white dark:text-gray-600 text-xs font-medium'>{certificate.provider}</div>
-                            <div className='text-white dark:text-black text-xs flex items-center'> 
-                                <a href={certificate.url} target='_blank' className='text-white dark:text-black flex items-center transition-transform hover:translate-x-1 font-semibold '>View Certificate                    
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-3 h-4 ml-2 transition-transform hover:translate-x-1">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                                    </svg>
-                                </a>
-                            </div>
-                    </motion.div>
-                </div>
-            ))}
 
+    <div className='flex flex-wrap'>
+    {certificates.map((certificate, index) => (
+        <div key={index} className='w-auto py-1'>
+            <motion.div 
+                initial={{y:50}}
+                whileInView={{y:0}}
+                transition={{duration: 0.5, type:"spring"}}
+                className='w-60 h-28 border-2 border-white rounded-md bg-black dark:bg-white m-1 p-3 space-y-1.5'
+            >
+                <div className='text-white dark:text-black text-sm font-bold'>{certificate.name}</div>
+                <div className='text-white dark:text-gray-600 text-xs font-medium'>{certificate.provider}</div>
+                <div className='text-white dark:text-black text-xs flex items-center'> 
+                    <a href={certificate.url} target='_blank' className='text-white dark:text-black flex items-center transition-transform hover:translate-x-1 font-semibold '>View Certificate                    
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-3 h-4 ml-2 transition-transform hover:translate-x-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>
+                    </a>
+                </div>
+            </motion.div>
         </div>
+    ))}
+</div>
+
+        
     </div>
   )
 }

@@ -10,7 +10,7 @@ const Contact = () => {
         <h1 className="text-5xl font-black sm:text-8xl sm:m-0 md:m-4">Contacts</h1>
         <div className='sm:m-4 md:m-12'>
             <div>
-                <h1 className='font-bold text-3xl'>Get in touch, let's talk.</h1>
+            <h1 className='font-bold text-3xl'>Get in touch, let&rsquo;s talk.</h1>
                 <h4 className='text-xl my-4'>Feel free to send me an <a href="mailto:medalladachris100@gmail.com" className="underline">email</a> or schedule a&nbsp;
                 <a href="https://calendly.com/tianmeds" className="underline">free consultation</a> with me</h4>
             </div>

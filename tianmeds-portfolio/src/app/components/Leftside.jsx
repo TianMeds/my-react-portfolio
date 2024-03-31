@@ -61,18 +61,19 @@ const Leftside = () => {
             <div className="w-full mt-4">
               <h1 className="font-semibold text-lg mb-4">Social links</h1>
 
-              {socialLinks.map((link) => (
-                <div className="flex items-center mb-5">
+              {socialLinks.map((link, index) => ( // Add index as the second argument
+                <div key={index} className="flex items-center mb-5"> 
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 mr-2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                   </svg>
                   <p> 
                     <a href={link.url} className="un dark: dark ">{link.name}</a> 
                   </p>
                 </div>
               ))}
-              
+                          
             </div>
+
           </div>
   )
 }

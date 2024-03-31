@@ -43,11 +43,11 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
 
                 <div className='mt-2 flex items-center'>
                     <Link href={github} target='_blank' className='w-10'>
-                        <img src="https://raw.githubusercontent.com/TianMeds/image--stocks-for-coding/4e3c205524bf6188a19f4264705906fac42756da/github-mark.svg" alt="GitHub" className="w-8 h-8 dark:filter dark:invert transform transition-transform hover:-translate-y-1" />
+                        <Image src="https://raw.githubusercontent.com/TianMeds/image--stocks-for-coding/4e3c205524bf6188a19f4264705906fac42756da/github-mark.svg" alt="GitHub" width={32} height={32} className="dark:filter dark:invert transform transition-transform hover:-translate-y-1" />
                     </Link>
                     <Link href={link} target='_blank' className='ml-4 rounded-lg bg-black text-white p-2 px-6 text-lg font-semibold dark:bg-white dark:text-black transition-colors duration-300 hover:scale-105'>
-                Visit Project
-            </Link>
+                        Visit Project
+                    </Link>
                 </div>
             </div>
         </article>
@@ -88,7 +88,7 @@ const NotFeaturedProject = ({title, type, img, link, github}) => {
                             Visit
                         </Link>
                         <Link href={github} target='_blank' className='w-8'>
-                            <img src="https://raw.githubusercontent.com/TianMeds/image--stocks-for-coding/4e3c205524bf6188a19f4264705906fac42756da/github-mark.svg" alt="GitHub" class="w-8 h-8 dark:filter dark:invert transform transition-transform hover:-translate-y-1"/>
+                            <Image src="https://raw.githubusercontent.com/TianMeds/image--stocks-for-coding/4e3c205524bf6188a19f4264705906fac42756da/github-mark.svg" alt="GitHub" width={32} height={32} className="dark:filter dark:invert transform transition-transform hover:-translate-y-1" />
                         </Link>
                     </div>
                 </div>
