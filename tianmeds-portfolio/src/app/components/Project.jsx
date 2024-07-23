@@ -2,13 +2,10 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import project1 from '../../../public/Portfolio-Mockup.png'
-import project2 from '../../../public/Recipe-Mockup.png';
-import project3 from '../../../public/Discord-Mockup.png';
+import project2 from '../../../public/MockPrepMockup.png';
 import project4 from '../../../public/Weather-Mockup.png';
 import project5 from '../../../public/Homecity-Mockup.png';
-import project6 from '../../../public/QR-Mockup.png';
-import project7 from '../../../public/Research-Mockup.png';
-import project8 from '../../../public/Todo-Mockup.png';
+import project7 from '../../../public/FoodMockup.png';
 import project9 from '../../../public/Scholarlink-Mockup.png';
 import {motion } from "framer-motion"
 import { useRef } from "react"
@@ -74,7 +71,7 @@ const NotFeaturedProject = ({title, type, img, link, github}) => {
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] bg-black dark:bg-white rounded-[2.5rem] rounded-br-3xl hidden md:block' />
 
                 <Link href={link} target='_blank' className='w-full cursor-pointer overflow-hidden rounded-lg'>
-                    <Image src={img} alt={title} className='w-full h-auto border-black dark:border-white border-2 rounded-lg transition-transform transform-gpu hover:scale-105 duration-300 ease-in-out' />
+                    <Image src={img} alt={title} className='w-full h-96 border-black dark:border-white border-2 rounded-lg transition-transform transform-gpu hover:scale-105 duration-300 ease-in-out' />
                 </Link>
 
                 <div className='w-full flex flex-col items-start justify-between mt-4'>
@@ -125,60 +122,30 @@ const Project = () => {
                     <div className='flex-1'>
                         <NotFeaturedProject
                             type='Website'
-                            title='Global Weather App'
-                            img={project4}
-                            link='https://tianmeds.github.io/weather-web-api/'
-                            github='https://github.com/TianMeds/weather-web-api.git'
-                        />
-                    </div>
-                    <div className='flex-1'>
-                        <NotFeaturedProject
-                            type='Website'
-                            title='Research Title Website'
+                            title='Food Ordering System'
                             img={project7}
-                            link='https://tianmeds.github.io/ResearchTitleGenerator/'
-                            github='https://github.com/TianMeds/ResearchTitleGenerator.git'
+                            link='https://rene-grace-sizzlingg.vercel.app/'
+                            github='https://github.com/TianMeds/food-ordering.git'
+                        />
+                    </div>
+                    <div className='flex-1'>
+                        <NotFeaturedProject
+                            type='Website'
+                            title='Full Stack Portfolio'
+                            img={project1}
+                            link='https://react-portfolio-dro.pages.dev/'
+                            github='https://github.com/TianMeds/my-Official-Portfolio'
                         />
                     </div>
                 </div>
                 <div className='col-span-12'>
                     <FeaturedProject
                         type='Featured Website'
-                        title='Full Stack Portfolio'
-                        summary='This portfolio was created with React with the mix of PHP and MySQL for the Database. This was created to showcase my expertise in animation using CSS and JavaScript File. It consist of Home, About, Project, and Contact Page'
-                        img={project1}
-                        link='https://www.google.com'
-                        github='https://www.google.com'
-                    />
-                </div>
-                <div className='flex flex-col md:flex-row gap-8'>
-                    <div className='flex-1'>
-                        <NotFeaturedProject
-                            type='Website'
-                            title='Discord Bot and Website'
-                            img={project3}
-                            link='https://tianmeds.github.io/weather-web-api/'
-                            github='https://github.com/TianMeds/weather-web-api.git'
-                        />
-                    </div>
-                    <div className='flex-1'>
-                        <NotFeaturedProject
-                            type='Website'
-                            title='Todo List Website'
-                            img={project8}
-                            link='https://tianmeds.github.io/todo-list/'
-                            github='https://github.com/TianMeds/todo-list.git'
-                        />
-                    </div>
-                </div>
-                <div className='col-span-12'>
-                    <FeaturedProject
-                        type='Featured Website'
-                        title='Food Recipe Website'
-                        summary='Express Eat is a website that provides a wide variety of recipes. Recipes that we offer not only here in the philippines but for different countries. We also have a search bar that allows you to search for a specific recipe. We hope that you will enjoy this website and find the recipe that you are craving for.'
+                        title='SAAS: MockPrep AI'
+                        summary='MockPrep AI is a Software as a Service (SAAS) platform that offers a wide range of features for students and professionals to prepare for their interviews. The Platform offers questions and answers, feedback to your answers.'
                         img={project2}
-                        link='https://tianmeds.github.io/ExpressEat/'
-                        github='https://github.com/TianMeds/ExpressEat.git'
+                        link='https://mockprep-ai-three.vercel.app/'
+                        github='https://github.com/TianMeds/gemini-mockupint.git'
                     />
                 </div>
                 <div className='flex flex-col md:flex-row gap-8'>
@@ -194,14 +161,14 @@ const Project = () => {
                     <div className='flex-1'>
                         <NotFeaturedProject
                             type='Website'
-                            title='QR Code Generator Website'
-                            img={project6}
-                            link='https://tianmeds.github.io/QR-Code-Generator/'
-                            github='https://github.com/TianMeds/QR-Code-Generator.git'
+                            title='Global Weather App'
+                            img={project4}
+                            link='https://tianmeds.github.io/weather-web-api/'
+                            github='https://github.com/TianMeds/weather-web-api.git'
                         />
                     </div>
-                </div>
 
+                </div>
             </div>
         </div>
 
