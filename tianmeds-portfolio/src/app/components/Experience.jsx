@@ -57,6 +57,14 @@ const Experience = () => {
                     />
                      <ul className="w-full flex flex-col items-start justify-between ml-4">
 
+                     <Details
+                        position="Developer Intern"
+                        company="Andio IT Solution"
+                        companyLink="https://www.andiosolutions.com/"
+                        time="May 2024 - Present"
+                        address="Makati, PH"
+                        work="Collaborated with IT Team to develop and maintain the company's project. Developed mobile application using PowerApps and Power BI for Analytics."
+                      />
 
                      <Details
                         position="BS in Information Technology"
@@ -66,24 +74,6 @@ const Experience = () => {
                         address="Asia Pacific College"
                         work="Relevant Coursework: Data Structures and Algorithms, Web Development, Network Administration, Database Management, and Projec
                         Management."
-                      />
-
-                     <Details
-                        position="Developer"
-                        company="JPCS"
-                        companyLink="https://www.facebook.com/JPCSAPC"
-                        time="Ongoing"
-                        address="Makati, PH"
-                        work="I have worked on a variety of projects, including websites, web apps, and software development projects."
-                      />
-
-                     <Details
-                        position="Full Stack Developer"
-                        company="Gado and Jess Jalandoni"
-                        companyLink=""
-                        time="Ongoing"
-                        address="Mandaluyong, PH"
-                        work="I have worked on a variety of projects, including websites, web apps, and software development projects."
                       />
 
                      <Details
@@ -97,26 +87,8 @@ const Experience = () => {
                         and strategies."
                       />
 
-                      <Details
-                        position="HR Assistant"
-                        company="SM Supermalls"
-                        companyLink="https://www.smsupermalls.com/mall-directory/sm-makati/information/"
-                        time="2022 - 2022 "
-                        address="Makati, PH"
-                        work="Conducted document scanning with meticulous attention to detail to ensure accuracy and organization. 
-                        Managed communication with applicants via SMS, conveying important information and updates
-                        promptly and professionally."
-                      />
 
-                      <Details
-                        position="Graphic Designer"
-                        company="Fiverr"
-                        companyLink=""
-                        time="2020 - 2021"
-                        address="Makati, PH"
-                        work="Demonstrated creativity and expertise in logo design, especially in the gaming and business industries,
-                        assisting numerous businesses with their branding initiatives."
-                      />
+
                      </ul>
                   </div>
             </div>
