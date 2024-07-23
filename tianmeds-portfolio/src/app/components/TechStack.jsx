@@ -39,6 +39,18 @@ export default function TechStack() {
     {
       url: 'https://raw.githubusercontent.com/TianMeds/image--stocks-for-coding/main/image_2024-03-29_021857071.png'
     },
+    {
+      url: 'https://raw.githubusercontent.com/TianMeds/image--stocks-for-coding/main/ClerkLogo.jpeg'
+    },
+    {
+      url: 'https://raw.githubusercontent.com/TianMeds/image--stocks-for-coding/main/GraphQL_Logo.svg.png'
+    },
+    {
+      url: 'https://raw.githubusercontent.com/TianMeds/image--stocks-for-coding/main/Hygraph_Logo.jpg'
+    },
+    {
+      url: 'https://raw.githubusercontent.com/TianMeds/image--stocks-for-coding/main/PostgreSQL.png'
+    },
 
   ]
 
