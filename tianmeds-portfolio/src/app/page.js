@@ -3,7 +3,7 @@ import Footer from "./components/Footer";
 import Link from 'next/link'
 import Image from 'next/image'
 import '../app/globals.css'
-import project2 from '../../public/Recipe-Mockup.png';
+import project2 from '../../public/MockPrepMockup.png';
 import project4 from '../../public/Pahiram-Mockup.png';
 import project7 from '../../public/FoodMockup.png';
 import project9 from '../../public/Scholarlink-Mockup.png';
