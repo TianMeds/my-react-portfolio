@@ -35,7 +35,7 @@ const AboutPage = () => {
           <div class="flex flex-col sm:w-full md:w-1/2 lg:w-2/3 mt-4 sm:mt-4 md:mt-10 mb-10 ">
             
           <div className="w-full">
-              <p>I am Christian Medallada, people call me Meds, currently pursuing my Bachelor's Degree majoring in Information Technology from Asia Pacific College. I work on a variety of projects such as web development, UI/UX design, mobile development, 
+              <p>I am Christian Medallada, people call me Meds, currently pursuing my Bachelor&apos;s Degree majoring in Information Technology from Asia Pacific College. I work on a variety of projects such as web development, UI/UX design, mobile development, 
                   video creation, and coding lessons. I have been working on so many projects that would eventually make me a better software developer.
                   <br/> <br/> 
                   I am a tech enthusiast & an open source advocate. I am always open to designing and criticizing on projects and innovative/Unique ideas..</p>
