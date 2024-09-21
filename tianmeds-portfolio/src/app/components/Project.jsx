@@ -3,10 +3,11 @@ import Link from 'next/link'
 import Image from 'next/image'
 import project1 from '../../../public/Portfolio-Mockup.png'
 import project2 from '../../../public/MockPrepMockup.png';
-import project4 from '../../../public/Weather-Mockup.png';
+import project4 from '../../../public/Pahiram-Mockup.png';
 import project5 from '../../../public/Homecity-Mockup.png';
 import project7 from '../../../public/FoodMockup.png';
 import project9 from '../../../public/Scholarlink-Mockup.png';
+
 import {motion } from "framer-motion"
 import { useRef } from "react"
 
@@ -131,10 +132,10 @@ const Project = () => {
                     <div className='flex-1'>
                         <NotFeaturedProject
                             type='Website'
-                            title='Full Stack Portfolio'
-                            img={project1}
-                            link='https://react-portfolio-dro.pages.dev/'
-                            github='https://github.com/TianMeds/my-Official-Portfolio'
+                            title='Pahiram'
+                            img={project4}
+                            link='https://pahiram-fe-v2-org.vercel.app/auth/login'
+                            github='https://github.com/Polar-Solutions/pahiram-fe-v2-org.git'
                         />
                     </div>
                 </div>
@@ -161,10 +162,10 @@ const Project = () => {
                     <div className='flex-1'>
                         <NotFeaturedProject
                             type='Website'
-                            title='Global Weather App'
-                            img={project4}
-                            link='https://tianmeds.github.io/weather-web-api/'
-                            github='https://github.com/TianMeds/weather-web-api.git'
+                            title='Full Stack Portfolio'
+                            img={project1}
+                            link='https://react-portfolio-dro.pages.dev/'
+                            github='https://github.com/TianMeds/my-Official-Portfolio'
                         />
                     </div>
 

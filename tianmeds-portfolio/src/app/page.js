@@ -3,10 +3,10 @@ import Footer from "./components/Footer";
 import Link from 'next/link'
 import Image from 'next/image'
 import '../app/globals.css'
-import project1 from '../../public/Portfolio-Mockup.png';
 import project2 from '../../public/Recipe-Mockup.png';
-import project3 from '../../public/Discord-Mockup.png';
-import project4 from '../../public/Weather-Mockup.png';
+import project4 from '../../public/Pahiram-Mockup.png';
+import project7 from '../../public/FoodMockup.png';
+import project9 from '../../public/Scholarlink-Mockup.png';
 
 
 const NotFeaturedProject = ({title, type, img, link, github}) => {
@@ -48,8 +48,8 @@ export default function Home() {
         <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold ml-5">Hello I&apos;m</h3>
           <h1 className="text-5xl sm:text-8xl m-4 font-bold">Christian Medallada</h1> 
           <div className="ml-4 text-base sm:text-xl">
-            <p>Full Stack Developer and UI/UX Designer Based on Philippines. </p>
-            <p>I specialized in Backend Development, Responsive Web Design,</p>
+            <p>Full Stack Developer and Cloud Engineer Based on Philippines. </p>
+            <p>I specialized in Full Stack Development, IT Support,</p>
             <p>and Cloud Deployment</p>
           </div>
 
@@ -63,7 +63,7 @@ export default function Home() {
               </a>
             </div>
             <div className="sm:w-auto w-full">
-              <a href="https://drive.google.com/uc?export=download&id=1iQijZ828DMmg5L6E5EiIMv8Hu9PI_iI6" className="bg-blue-600 text-white px-4 py-2 rounded-md flex items-center justify-center hover:bg-blue-700" download="resume.pdf">
+              <a href="https://drive.google.com/uc?export=download&id=1gz5pryl1f7sj_oIyMlfzZItawxFaeZi5" className="bg-blue-600 text-white px-4 py-2 rounded-md flex items-center justify-center hover:bg-blue-700" download="resume.pdf">
                 Resume
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 ml-2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
@@ -131,19 +131,19 @@ export default function Home() {
             {/* Image Card 1 */}
             <NotFeaturedProject
                 type='Website'
-                title='React Portfolio Website'
-                img={project1}
-                link='https://react-portfolio-dro.pages.dev'
-                github='https://github.com/TianMeds/my-Official-Portfolio.git'
+                title='Pahiram'
+                img={project4}
+                link='https://pahiram-fe-v2-org.vercel.app/auth/login'
+                github='https://github.com/Polar-Solutions/pahiram-fe-v2-org.git'
             />
         
             {/* Image Card 2 */}
             <NotFeaturedProject
-                type='Website'
-                title='Food Recipe Website'
-                img={project2}
-                link='https://tianmeds.github.io/ExpressEat/'
-                github='https://github.com/TianMeds/ExpressEat.git'
+              type='Featured Website'
+              title='SAAS: MockPrep AI'
+              img={project2}
+              link='https://mockprep-ai-three.vercel.app/'
+              github='https://github.com/TianMeds/gemini-mockupint.git'
             />
           </div>
 
@@ -151,21 +151,21 @@ export default function Home() {
           <div className="flex flex-col gap-4 sm:flex-row sm:gap-8 mx-auto mt-8">
             {/* Image Card 3 */}
             <NotFeaturedProject
-                type='Bot Application'
-                title='Tone Bot'
-                img={project3}
-                link='https://tianmeds.github.io/DiscordWebsite/'
-                github='https://github.com/TianMeds/DiscordBot.git'
+                type='Website'
+                title='Food Ordering System'
+                img={project7}
+                link='https://rene-grace-sizzlingg.vercel.app/'
+                github='https://github.com/TianMeds/food-ordering.git'
             />
 
 
             {/* Image Card 4 */}
             <NotFeaturedProject
-                type='Website'
-                title='Weather Application'
-                img={project4 }
-                link='https://tianmeds.github.io/weather-web-api/'
-                github='https://github.com/TianMeds/weather-web-api.git'
+                type='Featured Website'
+                title='Scholarship Management System'
+                img={project9}
+                link='https://gadojessjalandoni-client.pages.dev/login'
+                github='https://gadojessjalandoni-client.pages.dev/login'
             />  
         </div>  
       </div>

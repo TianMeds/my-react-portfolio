@@ -6,9 +6,30 @@ import { useRef } from "react"
 const Certificate = () => {
     const certificates = [
         {
-            name: 'AWS Academy Graduate',
-            provider: 'AWS Academy',
-            url: 'https://www.credly.com/badges/1ca3cb00-f27a-485c-be65-3884f2f4991b/public_url'
+            name: 'AWS Cloud Practitioner',
+            provider: 'AWS',
+            url: 'https://drive.google.com/file/d/1BImge0QFX1uQM5_uk_XoHVgQYJDk0984/view?usp=sharing'
+
+        },
+        {
+            name: 'AWS Cloud Solutions Architect',
+            provider: 'AWS',
+            url: 'hhttps://drive.google.com/file/d/1r2g6Ro83g-M6TtrCr-XhROHikERX8kbV/view?usp=sharing'
+        },
+        {
+            name: 'Google UX Design',
+            provider: 'Google',
+            url: 'https://drive.google.com/file/d/1j-dsmSA9kwdWImHKRwuY-ScrpwlfaDW5/view?usp=sharing'
+        },
+        {
+            name: 'Google IT Support',
+            provider: 'Google',
+            url: 'https://drive.google.com/file/d/1HzJGABgpCJVr0hdstiLN9eIoQtEywoL3/view?usp=sharing'
+        },
+        {
+            name: 'Meta Frontend Developer',
+            provider: 'Meta',
+            url: 'https://drive.google.com/file/d/134wDHdztSam1Chr3K897GvLHMrjowq-6/view?usp=sharing'
         },
         {
             name: 'Alibaba Cloud Associate',
@@ -26,14 +47,14 @@ const Certificate = () => {
             url: 'https://drive.google.com/file/d/12sRQPLVk2HzIqNvjrRDSi7vtNxudvNEI/view'
         },
         {
-            name: 'Responsive Web Design',
-            provider: 'FreeCodeCamp',
-            url: 'https://www.freecodecamp.org/certification/TianMeds/responsive-web-design'
+            name: 'AWS Academy Graduate',
+            provider: 'AWS Academy',
+            url: 'https://www.credly.com/badges/1ca3cb00-f27a-485c-be65-3884f2f4991b/public_url'
         },
         {
-            name: 'Frontend Development Libraries',
-            provider: 'FreeCodeCamp',
-            url: 'https://www.freecodecamp.org/certification/TianMeds/front-end-development-libraries'
+            name: 'Foundational C# with Microsoft',
+            provider: 'Microsoft',
+            url: 'https://www.freecodecamp.org/certification/TianMeds/foundational-c-sharp-with-microsoft'
         },
         {
             name: 'Data Structures and Algorithms',

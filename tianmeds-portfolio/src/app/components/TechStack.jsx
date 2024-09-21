@@ -13,6 +13,12 @@ export default function TechStack() {
       url: 'https://raw.githubusercontent.com/TianMeds/image--stocks-for-coding/main/62a74dd1223343fbc2207d00.png'
     },
     {
+      url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png'
+    },
+    {
+      url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png'
+    },
+    {
       url: 'https://raw.githubusercontent.com/TianMeds/image--stocks-for-coding/main/5848152fcef1014c0b5e4967.png'
     },
     {

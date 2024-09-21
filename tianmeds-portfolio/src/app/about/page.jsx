@@ -22,7 +22,7 @@ const AboutPage = () => {
               I am a full-stack developer specializing in developing solutions with
             </p>
             <p className="text-lg sm:text-4xl m-4 font-bold">
-              JavaScript, TypeScript, PHP, and Python. 
+              TypeScript, PHP, and AWS. 
             </p>
           </div>
         </div>
@@ -35,11 +35,10 @@ const AboutPage = () => {
           <div class="flex flex-col sm:w-full md:w-1/2 lg:w-2/3 mt-4 sm:mt-4 md:mt-10 mb-10 ">
             
           <div className="w-full">
-              <p>Hi, My Name Is Christian B. Medallada. Most People Call Me Tian Or Meds. I&apos;m Currently 21 Years Old And Living In Makati City, Philippines. 
-                  I&apos;m currently pursuing a Bachelor of Science in Information Technology. I work on a variety of projects such as websites, web apps, UI/UX design, web and graphic design, 
-                  video creation, and coding lessons. have been working on so many projects that would eventually make me a better software developer.
-                  <br/> <br/> When I&apos;m not writing code, 
-                  I enjoy editing and learning about emerging technologies, travelling and learning managing money. I share the things I&apos;ve learned through short videos or on my blog.</p>
+              <p>I am Christian Medallada, people call me Meds, currently pursuing my Bachelor's Degree majoring in Information Technology from Asia Pacific College. I work on a variety of projects such as web development, UI/UX design, mobile development, 
+                  video creation, and coding lessons. I have been working on so many projects that would eventually make me a better software developer.
+                  <br/> <br/> 
+                  I am a tech enthusiast & an open source advocate. I am always open to designing and criticizing on projects and innovative/Unique ideas..</p>
           </div>
 
 

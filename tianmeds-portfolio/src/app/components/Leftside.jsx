@@ -21,7 +21,7 @@ const Leftside = () => {
         },
         {
           name: 'Dribble',
-          url: 'https://dribble.com/tianmeds'
+          url: 'https://dribbble.com/TianMeds'
         }
       ]
 
