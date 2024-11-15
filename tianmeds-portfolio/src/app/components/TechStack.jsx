@@ -57,6 +57,15 @@ export default function TechStack() {
     {
       url: 'https://raw.githubusercontent.com/TianMeds/image--stocks-for-coding/main/PostgreSQL.png'
     },
+    {
+      url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jenkins_logo.svg/1483px-Jenkins_logo.svg.png'
+    },
+    {
+      url: 'https://static-00.iconduck.com/assets.00/terraform-icon-1803x2048-hodrzd3t.png'
+    },
+    {
+      url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Ansible_logo.svg/640px-Ansible_logo.svg.png'
+    },
 
   ]
 

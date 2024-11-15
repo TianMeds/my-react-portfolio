@@ -133,7 +133,7 @@ export default function Home() {
                 type='Website'
                 title='Pahiram'
                 img={project4}
-                link='https://pahiram-fe-v2-org.vercel.app/auth/login'
+                link='https://apc-pahiram.vercel.app/auth/login'
                 github='https://github.com/Polar-Solutions/pahiram-fe-v2-org.git'
             />
         
